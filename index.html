@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Clase js</h1>
+
+    <div class="eleccion-carne">
+        <h1>Elegi la base</h1>
+        <label for="radioCarne">Carne</label>
+        <input type="radio" id="radioCarne" value="200" name="tipo_base" onclick="cambiarTotalRadioBase('radioCarne');">
+        <label for="radioPollo">Pollo</label>
+        <input type="radio" id="radioPollo" value="150" name="tipo_base" onclick="cambiarTotalRadioBase('radioPollo');">
+        <label for="radioVeggie">Veggie</label>
+        <input type="radio" id="radioVeggie" value="100" name="tipo_base"
+            onclick="cambiarTotalRadioBase('radioVeggie');">
+    </div>
+    <div class="eleccion-pan">
+        <h1>Elegi tu pan</h1>
+        <label for="radioBlanco">Blanco</label>
+        <input type="radio" id="radioBlanco" value="50" name="tipo_pan" onclick="cambiarTotalRadioPan('radioBlanco');">
+        <label for="radioNegro">Negro</label>
+        <input type="radio" id="radioNegro" value="60" name="tipo_pan" onclick="cambiarTotalRadioPan('radioNegro');">
+        <label for="radioSgluten">S/gluten</label>
+        <input type="radio" id="radioSgluten" value="70" name="tipo_pan"
+            onclick="cambiarTotalRadioPan('radioSgluten');">
+    </div>
+    <div>
+        <label for="checkboxTomate">Tomate</label>
+        <input type="checkbox" id="checkboxTomate" value="50" onclick="cambiarTotal('checkboxTomate');">
+        <label for="checkboxLechuga">Lechuga</label>
+        <input type="checkbox" id="checkboxLechuga" value="40" onclick="cambiarTotal('checkboxLechuga');">
+        <label for="checkboxCebolla">Cebolla</label>
+
+        <input type="checkbox" id="checkboxCebolla" value="25" onclick="cambiarTotal('checkboxCebolla');">
+        <label for="checkboxMostaza">Mostaza</label>
+        <input type="checkbox" id="checkboxMostaza" value="30" onclick="cambiarTotal('checkboxMostaza');">
+        <label for="checkboxMayonesa">Mayonesa</label>
+        <input type="checkbox" id="checkboxMayonesa" value="20" onclick="cambiarTotal('checkboxMayonesa');">
+    </div>
+    <div class="div-tot">
+        <p>Total=<span id="total"></span></p>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./main.js"></script>
+
+</html>
